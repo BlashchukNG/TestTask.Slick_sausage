@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace gig.fps
+namespace testtask.sausage
 {
     public sealed class UIControllerFactory :
         IFactory<UIController>
@@ -17,10 +17,11 @@ namespace gig.fps
         {
             var mainCanvas = Object.Instantiate(_gameData.GetPrfMainCanvas);
             var gameVersion = Object.Instantiate(_gameData.GetPrfGameVersion, mainCanvas);
+            var endGame = Object.Instantiate(_gameData.GetPrfEndGame, mainCanvas);
 
             gameVersion.GetChild(0).GetComponent<TMP_Text>().text = _gameData.CurrentGameVersion;
 
-            return new UIController(mainCanvas);
+            return new UIController(mainCanvas, endGame);
         }
     }
 }

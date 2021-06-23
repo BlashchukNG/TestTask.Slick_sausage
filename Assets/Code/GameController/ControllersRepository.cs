@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 
-namespace gig.fps
+namespace testtask.sausage
 {
     public sealed class ControllersRepository :
         ILogicUpdatable,

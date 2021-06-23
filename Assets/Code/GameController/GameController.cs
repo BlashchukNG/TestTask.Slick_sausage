@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-namespace gig.fps
+namespace testtask.sausage
 {
     public sealed class GameController : MonoBehaviour
     {

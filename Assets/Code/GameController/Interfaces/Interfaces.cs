@@ -1,4 +1,4 @@
-﻿namespace gig.fps
+﻿namespace testtask.sausage
 {
     public interface IController { }
     public interface ILogicUpdatable { void LogicUpdate(float delta); }
