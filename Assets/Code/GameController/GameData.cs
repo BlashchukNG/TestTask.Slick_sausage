@@ -8,6 +8,8 @@ namespace testtask.sausage
     {
         [Header("came version")]
         public string CurrentGameVersion;
+        [Header("save controller")]
+        public SaveData DefaultSaveData;
         [Header("root paths")]
         public string RootPrefabs;
         public string RootDatas;
@@ -21,14 +23,14 @@ namespace testtask.sausage
         public string RootPlayerController;
         public string PrfPlayer;
         public string PrfPoint;
-        public string DataPlayer;        
-        public string DataTrajectory;        
+        public string DataPlayer;
+        public string DataTrajectory;
 
 
         #region InputController
 
         #endregion
-              
+
         #region PlayerController
 
         public Transform GetPrfPlayer { get => Load<Transform>($"{RootPrefabs}/{RootPlayerController}/{PrfPlayer}"); }

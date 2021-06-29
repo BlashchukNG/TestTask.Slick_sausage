@@ -1,7 +1,4 @@
-﻿using TMPro;
-using UnityEngine;
-
-namespace testtask.sausage
+﻿namespace testtask.sausage
 {
     public sealed class CameraFactory :
         IFactory<CameraController>
